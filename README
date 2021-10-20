@@ -1,0 +1,13 @@
+Este trabalho de BD1 consiste em escolher um banco de dados para recriar, no meu caso, escolhi um banco de dados de um hospital,
+onde dentro dele, existem diversas entidades, tais como:
+
+Pacientes;
+Médicos;
+Departamento;
+Doenças.
+
+Essas entidades foram então recriadas em um diagrama, cada uma com suas particularidades (ex: Médico possui CRM, paciente não).
+No futuro este diagrama será recriado em um arquivo .SQL.
+
+Aluno: Marcos Bezner 
+RA: 2149435
