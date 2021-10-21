@@ -6,7 +6,17 @@ Médicos;
 Departamento;
 Doenças.
 
-Essas entidades foram então recriadas em um diagrama, cada uma com suas particularidades (ex: Médico possui CRM, paciente não).
+Das entidades, temos que:
+
+"N" médicos tratam de "N" pacientes, onde "1" paciente pode ter um leito, que pode ter "N" pacientes;
+"1" paciente pode ter "N" doenças, que podem necessitar de "N" exames laboratoriais, onde estes podem ser feitos por "N" biomédicos;
+"N" biomédicos podem trabalhar em "N" departamentos diferentes, que também possui "N" médicos;
+"N" departamentos podem requisitar "N" medicamentos, que podem tratar "N" pacientes, ou ser necessários em "N" cirurgias;
+"1" médico realiza "N" cirurgias, que podem ser auxiliadas por "N" enfermeiros;
+"N" enfermeiros aplicam "N" medicamentos" e auxiliam "N" leitos;
+"N" departamentos, requisitam "N" medicamentos para os funcionários da logística, que então entregam "N" medicamentos;
+
+Essas entidades foram então recriadas em um diagrama, cada uma com suas particularidades (ex: Médico possui CRM, paciente CPF, etc).
 No futuro este diagrama será recriado em um arquivo .SQL.
 
 Aluno: Marcos Bezner 
