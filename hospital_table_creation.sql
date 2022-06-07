@@ -1,4 +1,3 @@
-
 CREATE TABLE medicos (
 	crm VARCHAR(11) PRIMARY KEY,
     	nome VARCHAR(20) NOT NULL,
@@ -7,7 +6,7 @@ CREATE TABLE medicos (
 
 CREATE TABLE medico_clinico_geral(
 	horas_trabalhadas INTEGER,
-	idade INTEGER,
+	salario DECIMAL(10,2),
 	rg VARCHAR(10),
 	crm_clinico_geral VARCHAR(11) PRIMARY KEY,
 
@@ -17,7 +16,7 @@ CREATE TABLE medico_clinico_geral(
 CREATE TABLE medico_cirurgiao(
 	especialidade VARCHAR(20),
 	numero_cirurgias INTEGER,
-	idade INTEGER,
+	HORAS_TRABALHADAS INTEGER,
 	crm_medico_cirurgiao VARCHAR(11) PRIMARY KEY,
 
 	FOREIGN KEY (crm_medico_cirurgiao) REFERENCES medicos (crm) ON DELETE CASCADE
@@ -79,6 +78,8 @@ CREATE TABLE leitos_necessitam_equipamentos(
 CREATE TABLE cirurgias (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
     	tempo VARCHAR(20),
+        objetivo_cirurgia VARCHAR(30),
+        grau_complexidade VARCHAR(40),
     	tipo_anestesia VARCHAR(10)
 );
 
