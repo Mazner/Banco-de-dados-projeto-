@@ -1,3 +1,13 @@
+/*****************	Criação de tabelas BD_hospital	**********************
+*																		 *
+*					ALUNO:	MARCOS BEZNER RAMPASO -2149435				 *
+*																		 *
+/*************************	LINK PARA O GITHUB	**************************
+*																	     *
+*			https://github.com/Mazner/Banco-de-dados-projeto-            *
+* 																		 *
+**************************************************************************/
+
 CREATE TABLE medicos (
 	crm VARCHAR(11) PRIMARY KEY,
     	nome VARCHAR(20) NOT NULL,
@@ -120,7 +130,7 @@ CREATE TABLE enfermeiros(
 CREATE TABLE enfermeiro_aplica_medicamento(
 	coren_enfermeiro VARCHAR(11),
     	id_medicamento INTEGER,
-    	quantidade_ml DECIMAL (5,4),
+    	quantidade_ml DECIMAL (5,2),
     
     	PRIMARY KEY (coren_enfermeiro, id_medicamento),
     	FOREIGN KEY (coren_enfermeiro) REFERENCES enfermeiros(coren),
@@ -319,37 +329,37 @@ VALUES	(312, 'Antibiótico', 23.32),
         
 /*------------------------medico_receita_medicamento---------------*/
 INSERT INTO medico_receita_medicamento (crm_clinico_geral, id_medicamento)
-VALUES 	('',621),
-		('',122),
-        ('',124),
-        ('',21),
-        ('',9333),
-        ('',922),
-        ('',4646),
-        ('',312),
-        ('',444),
-        ('',8896);
+VALUES 	(1254632025,621),
+		(9315321211,122),
+        (9054398594,124),
+        (2587413699,21),
+        (6548921456,9333),
+        (3154123311,922),
+        (3441233432,4646),
+        (6541225155,312),
+        (7841223661,444),
+        (1232435211,8896);
 /*------------------------enfermeiros---------------*/
 INSERT INTO enfermeiros (coren, nome, idade)
 VALUES 	('1235625871','Eduardo Sterbilich',23),
-		('1235625871','Luiz Paulo',43),
-        ('1235625871','Ednaldo Pereira', 34),
-        ('1235625871','Pedro Álvares', 62),
-        ('1235625871','Lucas Alexandre',73),
-        ('1235625871','Gabriela Sapio', 29),
-        ('1235625871','Guilherme Luiz',45),
-        ('1235625871','Letícia Karine',57),
-        ('1235625871','Lucas Caetano',41),
-        ('1235625871','Marcos Vinícius',19);
+		('1321423133','Luiz Paulo',43),
+        ('6346132259','Ednaldo Pereira', 34),
+        ('5453242567','Pedro Álvares', 62),
+        ('2648132569','Lucas Alexandre',73),
+        ('9987752447','Gabriela Sapio', 29),
+        ('4516702156','Guilherme Luiz',45),
+        ('0652621548','Letícia Karine',57),
+        ('5644751401','Lucas Caetano',41),
+        ('7678069847','Marcos Vinícius',19);
 /*------------------------enfermeiro_aplica_medicamento---------------*/
 INSERT INTO enfermeiro_aplica_medicamento(coren_enfermeiro, id_medicamento, quantidade_ml)
-VALUES	(),
-		(),
-		(),
-        (),
-        (),
-        (),
-        (),
-        (),
-        (),
-        ();
+VALUES	('1235625871',312,12.50),
+		('1321423133',8896,14.60),
+		('6346132259',312,16.10),
+        ('5453242567',9333,8.20),
+        ('2648132569',621,9.00),
+        ('9987752447',124,10.00),
+        ('4516702156',124,50.00),
+        ('0652621548',122,45.00),
+        ('5644751401',922,60.00),
+        ('7678069847',922,80.00);
