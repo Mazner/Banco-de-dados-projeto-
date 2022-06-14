@@ -331,16 +331,25 @@ VALUES 	('',621),
         ('',8896);
 /*------------------------enfermeiros---------------*/
 INSERT INTO enfermeiros (coren, nome, idade)
-VALUES 	(,'Eduardo Sterbilich',23),
-		(,'Luiz Paulo',43),
-        (,'Ednaldo Pereira', 34),
-        (,'Pedro Álvares', 62),
-        (,'Lucas Alexandre',73),
-        (,'Gabriela Sapio', 29),
-        (,'Guilherme Luiz',45),
-        (,'Letícia Karine',57),
-        (,'Lucas Caetano',41),
-        (,'Marcos Vinícius',19);
+VALUES 	('1235625871','Eduardo Sterbilich',23),
+		('1235625871','Luiz Paulo',43),
+        ('1235625871','Ednaldo Pereira', 34),
+        ('1235625871','Pedro Álvares', 62),
+        ('1235625871','Lucas Alexandre',73),
+        ('1235625871','Gabriela Sapio', 29),
+        ('1235625871','Guilherme Luiz',45),
+        ('1235625871','Letícia Karine',57),
+        ('1235625871','Lucas Caetano',41),
+        ('1235625871','Marcos Vinícius',19);
 /*------------------------enfermeiro_aplica_medicamento---------------*/
-INSERT INTO enfermeiro_aplica_medicamento
-VALUES();
+INSERT INTO enfermeiro_aplica_medicamento(coren_enfermeiro, id_medicamento, quantidade_ml)
+VALUES	(),
+		(),
+		(),
+        (),
+        (),
+        (),
+        (),
+        (),
+        (),
+        ();
