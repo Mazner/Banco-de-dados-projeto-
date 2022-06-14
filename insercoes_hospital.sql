@@ -305,9 +305,42 @@ VALUES 	('1245856392',1,'2020-12-12'),
         ('1364729475',10,'2021-04-23');
         
 /*------------------------MEDICAMENTOS---------------*/
-
+INSERT INTO medicamentos (id_medicamento,tipo_medicamento,preco_medicamento)
+VALUES	(312, 'Antibiótico', 23.32),
+		(444, 'Anestésico local', 123.32),
+        (8896, 'Retroviral', 84.11),
+        (4646, 'Anestésico geral', 432.01),
+        (922, 'Antibiótico', 222.22),
+        (9333, 'Retroviral', 372.12),
+        (21, 'anestésico local', 128.80),
+        (124, 'Analgésico', 12.43),
+        (122, 'Analgésico', 31.21),
+        (621, 'Retroviral', 32.12);
+        
 /*------------------------medico_receita_medicamento---------------*/
-
+INSERT INTO medico_receita_medicamento (crm_clinico_geral, id_medicamento)
+VALUES 	('',621),
+		('',122),
+        ('',124),
+        ('',21),
+        ('',9333),
+        ('',922),
+        ('',4646),
+        ('',312),
+        ('',444),
+        ('',8896);
 /*------------------------enfermeiros---------------*/
-
+INSERT INTO enfermeiros (coren, nome, idade)
+VALUES 	(,'Eduardo Sterbilich',23),
+		(,'Luiz Paulo',43),
+        (,'Ednaldo Pereira', 34),
+        (,'Pedro Álvares', 62),
+        (,'Lucas Alexandre',73),
+        (,'Gabriela Sapio', 29),
+        (,'Guilherme Luiz',45),
+        (,'Letícia Karine',57),
+        (,'Lucas Caetano',41),
+        (,'Marcos Vinícius',19);
 /*------------------------enfermeiro_aplica_medicamento---------------*/
+INSERT INTO enfermeiro_aplica_medicamento
+VALUES();
